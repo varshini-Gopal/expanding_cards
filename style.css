@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin : 0;
+}
+
+.container{
+    display: flex;
+    width: 90vh; 
+    background-color: aliceblue;
+}
+
+
+.panel{
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    position: relative;
+    height: 80vh;
+    flex: 0.5;
+    margin:  10px;
+    transition: flex 0.7s ease-in;
+    
+}
+.panel.active{
+    flex: 5;
+}
+.panel h1{
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+}
+.panel.active h1{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
